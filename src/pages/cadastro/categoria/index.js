@@ -3,26 +3,42 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../componentes/pageDefault';
 
 function CadastroCategoria() {
-  
-  const [categorias, setCategorias] = useState(['Teste']);
-
   const valoresIniciais = {
     nome: '',
     descricao: '',
-    cor: '#000'
+    cor: ''
   }
-  const [nomeDaCategoria, setNomeDaCategoria] = useState('Valor inicial');
+  
+  const [categorias, setCategorias] = useState([]);
+  const [values, setValues] = useState('Valor inicial');
+
+
+  function setValue(chave,valor){
+    setValues({
+      ...values,
+      [chave]: valor,
+    })
+  }
+
+  function handleChange(info){
+    setValue(
+      info.target.getAttribute('name'),
+      info.target.value
+      );
+  }
 
   return (
     <PageDefault>
-      <h1>Cadastro de Categoria: {nomeDaCategoria}</h1>
+      <h1>Cadastro de Categoria: {values.nome}</h1>
 
       <form onSubmit={function handleSubmit(infoEvento){
         infoEvento.preventDefault();
         setCategorias([
           ...categorias,
-          nomeDaCategoria
+          values
         ]);
+
+        setValues(valoresIniciais);
       }}>
 
         <div>
@@ -30,22 +46,21 @@ function CadastroCategoria() {
             Nome da Categoria:
             <input
               type="text"
-              value={nomeDaCategoria}
-              onChange={function funcaoHandleQueOErroPediu(info){
-                setNomeDaCategoria(info.target.value)
-              }}
+              value={values.nome}
+              name="nome"
+              onChange={handleChange}
             />
           </label>
         </div>
+
         <div>
           <label>
             Descrição:
             <input
               type="text"
-              value={nomeDaCategoria}
-              onChange={function funcaoHandleQueOErroPediu(info){
-                setNomeDaCategoria(info.target.value)
-              }}
+              value={values.descricao}
+              name="descricao"
+              onChange={handleChange}
             />
           </label>
         </div>
@@ -55,10 +70,9 @@ function CadastroCategoria() {
             Cor:
             <input
               type="color"
-              value={nomeDaCategoria}
-              onChange={function funcaoHandleQueOErroPediu(info){
-                setNomeDaCategoria(info.target.value)
-              }}
+              value={values.cor}
+              name="cor"
+              onChange={handleChange}
             />
           </label>
         </div>
@@ -73,7 +87,7 @@ function CadastroCategoria() {
         {categorias.map((categoria, indice) =>{
           return(
             <li key={`${categoria}${indice}`} >
-              {categoria}
+              {categoria.nome}
             </li>
           )
           
