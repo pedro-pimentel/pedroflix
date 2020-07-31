@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../Footer';
 import Menu from '../menu';
+import Bottom from './component/bottom';
 import styled from 'styled-components';
 
 const Main = styled.main`
@@ -16,6 +17,7 @@ function PageDefault({ children }){
     return(
         <>
             <Menu />
+                <Bottom />
                 <Main>
                     {children}
                 </Main>

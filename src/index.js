@@ -9,7 +9,7 @@ import Home from './pages/home/App';
 
 
 
-//Criar uma página 404 legal
+//Criar página 404
 const Pagina404 = () => (<div>Erro 404</div>)
 
 ReactDOM.render(
