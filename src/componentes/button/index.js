@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-//import { Link } from 'react-router-dom';
-//para usar o link, basta trocar o button por (Link) importando o link do react-router-dom
+// import { Link } from 'react-router-dom';
+// para usar o link, basta trocar o button por (Link) importando o link do react-router-dom
 const Button = styled.button` 
 color: var(--white);
 border: 1px solid var(--white);
