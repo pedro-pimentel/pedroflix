@@ -1,8 +1,8 @@
 ## Apresentando Pedroflix
 
-Projeto feito durante a Imersão React da Alura
+Projeto feito durante a Imersão React da Alura.
 
-você pode acessar aqui(https://pedroflix-ruddy.vercel.app/)
+Você pode acessar [aqui](https://pedroflix-ruddy.vercel.app/).
 
 ### Features!
 
