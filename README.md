@@ -1,10 +1,32 @@
+## Apresentando Pedroflix
+
+Projeto feito durante a Imersão React da Alura
+
+  - Type some Markdown on the left
+  - See HTML in the right
+  - Magic
+
+### Features!
+
+  - Listagem dos seus vídeos do Youtube favoritos
+  - Adicionar categorias de vídeos
+  - Cadastro de novos vídeos
+
+### Libs usadas
+
+O projeto foi feito em Reactjs usando as seguintes libs:
+
+* [json-server](https://github.com/typicode/json-server) - Usado para emular um mini backend para o projeto.
+* [react-slick](https://react-slick.neostack.com/) - Usado para criacção de lindos carroséis.
+* [styled-components](https://styled-components.com/) - Usado para criar componentes CSS.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn start´
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
