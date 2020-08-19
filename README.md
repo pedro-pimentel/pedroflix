@@ -2,10 +2,6 @@
 
 Projeto feito durante a Imersão React da Alura
 
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
-
 ### Features!
 
   - Listagem dos seus vídeos do Youtube favoritos
