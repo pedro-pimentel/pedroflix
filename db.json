@@ -9,7 +9,13 @@
         {
             "id": 2,
             "nome": "Back End",
-            "descrição": "Uma categorias bacanuda",
+            "descrição": "Outra categoria categorias bacanuda",
+            "cor": "#cbd1ff"
+        },
+        {
+            "id": 2,
+            "nome": "Categoria de Teste",
+            "descrição": "Uma categoria de teste",
             "cor": "#cbd1ff"
         }
     ]
