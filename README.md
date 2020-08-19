@@ -2,6 +2,8 @@
 
 Projeto feito durante a Imersão React da Alura
 
+você pode acessar aqui(https://pedroflix-ruddy.vercel.app/)
+
 ### Features!
 
   - Listagem dos seus vídeos do Youtube favoritos
